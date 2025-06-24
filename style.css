@@ -31,35 +31,48 @@ p {
 }
 .links {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 10px;
+}
+
+/*BOTÕES*/
+.links-button {
+  display: flex;
+  align-items: center; /* alinhamento vertical */
+  justify-content: center; /* alinhamento horizontal */
+  gap: 10px; /* cria um espaço entre itens flex */
   background-color: #e0f8d0;
   color: #346856;
+  padding: 14px 60px; /* adiciona preenchimento interno */
+  margin: 5px 0; /* adiciona margem entre botões */
+  border-radius: 15px; /* deixa as bordas redondas */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.363); /* sombras em objetos*/
+  transition: 0.3s; /* animação dos itens */
+  width: 100%; /* faz o botão usar tamanho máximo do container*/
+  max-width: 300px; /* define tamanho max, mesmo container sendo maior */
+  cursor: pointer; /* cursor vira mãozinha*/
   text-decoration: none;
-  padding: 16px;
-  margin: 10px 0;
-  border-radius: 20px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.363);
-  transition: 0.3s;
+  font-size: 20px;
+  font-family: "Monocraft";
 }
-.links:hover {
+/*CUIDA DAS ANIMAÇÕES DOS BOTÕES*/
+.links-button:hover {
   transform: scale(1.05);
   background-color: #346856;
   color: #e0f8d0;
 }
+/*CUIDA DAS ANIMAÇÕES FOTO DE PERFIL*/
 .profile_pic:hover {
   transform: scale(1.05);
+  border: 20px solid #346856;
 }
+/*CUIDA DO TAMANHO DOS ICONES*/
 .icon {
   width: 25px;
   height: 25px;
 }
-a {
-  color: inherit;
-  text-decoration: none;
-  font-size: 20px;
-}
+/*PERMITE USO DE FONTES EXTERNAS*/
 @font-face {
   font-family: Monocraft;
   src: url(fonts/Monocraft.otf);
