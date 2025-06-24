@@ -61,6 +61,6 @@ a {
   font-size: 20px;
 }
 @font-face {
-  font-family: "Monocraft.otf";
+  font-family: Monocraft;
   src: url(fonts/Monocraft.otf);
 }
