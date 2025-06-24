@@ -30,7 +30,10 @@ p {
   margin-bottom: 40px;
 }
 .links {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   background-color: #e0f8d0;
   color: #346856;
   text-decoration: none;
@@ -47,4 +50,13 @@ p {
 }
 .profile_pic:hover {
   transform: scale(1.05);
+}
+.icon {
+  width: 25px;
+  height: 25px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 20px;
 }
