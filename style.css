@@ -23,11 +23,11 @@ body {
 }
 h1 {
   font-size: 40px;
-  margin-bottom: 5px;
+  margin-bottom: auto;
 }
 p {
   font-size: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 .links {
   display: flex;
@@ -43,6 +43,7 @@ p {
   justify-content: center; /* alinhamento horizontal */
   gap: 10px; /* cria um espaço entre itens flex */
   background-color: #e0f8d0;
+  border-color: #346856;
   color: #346856;
   padding: 14px 60px; /* adiciona preenchimento interno */
   margin: 5px 0; /* adiciona margem entre botões */
