@@ -41,7 +41,7 @@ p {
   display: flex;
   align-items: center; /* alinhamento vertical */
   justify-content: center; /* alinhamento horizontal */
-  gap: 5px; /* cria um espaço entre itens flex */
+  gap: 10px; /* cria um espaço entre itens flex */
   background-color: #e0f8d0;
   border-color: #346856;
   color: #346856;
