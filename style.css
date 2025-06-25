@@ -5,7 +5,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 95vh;
   margin: 0;
 }
 .container {
@@ -13,6 +13,7 @@ body {
   width: 90%;
   max-width: 400px;
 }
+/* DEFINE FOTO DE PERFIL */
 .profile_pic {
   width: 200px;
   height: 200px;
@@ -20,6 +21,11 @@ body {
   border: 10px solid #e0f8d0;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.363);
   transition: 0.3s;
+}
+/* CUIDA DAS ANIMAÇÕES FOTO DE PERFIL */
+.profile_pic:hover {
+  transform: scale(1.05);
+  border: 15px solid #346856;
 }
 h1 {
   font-size: 40px;
@@ -30,6 +36,7 @@ hr {
   width: 100%;
   border: 0px;
   border-top: 4px solid;
+  border-radius: 10px;
 }
 p {
   font-size: 20px;
@@ -69,11 +76,6 @@ p {
   transform: scale(1.05);
   background-color: #346856;
   color: #e0f8d0;
-}
-/*CUIDA DAS ANIMAÇÕES FOTO DE PERFIL*/
-.profile_pic:hover {
-  transform: scale(1.05);
-  border: 20px solid #346856;
 }
 /*CUIDA DO TAMANHO DOS ICONES*/
 .icon {
