@@ -1,3 +1,4 @@
+/* Define as propriedades do body */
 body {
   background-color: #081820;
   color: #e0f8d0;
@@ -8,11 +9,28 @@ body {
   height: 95vh;
   margin: 0;
 }
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url("https://images.pexels.com/photos/6968875/pexels-photo-6968875.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%) brightness(80%);
+  mix-blend-mode: luminosity;
+  opacity: 0.9;
+}
+
+/* Cria um Class "conteiner" */
 .container {
   text-align: center;
   width: 90%;
   max-width: 400px;
 }
+
 /* DEFINE FOTO DE PERFIL */
 .profile_pic {
   width: 200px;
@@ -27,22 +45,33 @@ body {
   transform: scale(1.05);
   border: 15px solid #346856;
 }
+
+/* Define as propriedades do H1*/
 h1 {
   font-size: 40px;
   margin-bottom: auto;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.363);
 }
+
+/* Define as propriedades do h1r*/
 hr {
   color: #e0f8d0;
   width: 100%;
   border: 0px;
   border-top: 4px solid;
   border-radius: 10px;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.363);
 }
+
+/* Define as propriedades do p*/
 p {
   font-size: 20px;
   margin-bottom: 10px;
   margin-top: 10px;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.363);
 }
+
+/* Define as propriedades do H1*/
 .links {
   display: flex;
   flex-direction: column;
