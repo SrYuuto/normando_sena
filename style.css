@@ -10,6 +10,7 @@ body {
   margin: 0;
 }
 
+/* Configura as imagem de trás do body */
 body::before {
   content: "";
   position: absolute;
@@ -89,12 +90,12 @@ p {
   border-color: #346856;
   color: #346856;
   padding: 10px 40px; /* adiciona preenchimento interno */
+  width: 100%; /* faz o botão usar tamanho máximo do container*/
+  max-width: 300px; /* define tamanho max, mesmo container sendo maior */
   margin: 5px 0; /* adiciona margem entre botões */
   border-radius: 15px; /* deixa as bordas redondas */
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.363); /* sombras em objetos*/
   transition: 0.3s; /* animação dos itens */
-  width: 100%; /* faz o botão usar tamanho máximo do container*/
-  max-width: 300px; /* define tamanho max, mesmo container sendo maior */
   cursor: pointer; /* cursor vira mãozinha*/
   text-decoration: none;
   font-size: 20px;
